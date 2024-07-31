@@ -2,5 +2,7 @@ from os import path
 
 import pandas as pd
 
-titanic_csv = path.abspath(path.dirname(__file__) + "/titanic.csv")
+dir = path.dirname(__file__)
+
+titanic_csv = path.join(dir, "titanic.csv")
 titanic = pd.read_csv(titanic_csv)
