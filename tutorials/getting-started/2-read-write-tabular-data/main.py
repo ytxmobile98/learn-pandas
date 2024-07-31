@@ -1,10 +1,4 @@
-import os.path as path
-
-import pandas as pd
-
-# read Titanic data
-titanic_csv = path.abspath(path.dirname(__file__) + "/../data/titanic.csv")
-titanic = pd.read_csv(titanic_csv)
+from data.titanic import titanic
 
 # print first 5 rows of the data frame
 print(titanic.head())
