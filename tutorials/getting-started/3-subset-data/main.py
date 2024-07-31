@@ -1,4 +1,4 @@
-from data.titanic import titanic
+from data.data import titanic
 
 # get ages of Titanic passengers
 ages = titanic["Age"]

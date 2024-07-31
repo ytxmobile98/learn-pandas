@@ -1,4 +1,4 @@
-from data.titanic import titanic
+from data.data import titanic
 
 # print first 5 rows of the data frame
 print(titanic.head())
