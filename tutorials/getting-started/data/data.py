@@ -4,10 +4,7 @@ import pandas as pd
 
 dir = path.dirname(__file__)
 
-
-def __read_file(name: str) -> pd.DataFrame:
-    return pd.read_csv(path.join(dir, name))
-
-
-air_quality = __read_file("air_quality_no2.csv")
-titanic = __read_file("titanic.csv")
+# output data
+titanic = pd.read_csv(path.join(dir, "titanic.csv"))
+air_quality = pd.read_csv(path.join(dir, "air_quality_no2.csv"),
+                          index_col=0, parse_dates=True)
